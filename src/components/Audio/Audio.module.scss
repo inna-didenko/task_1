@@ -1,0 +1,56 @@
+.audioContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: clip-audio 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+@keyframes clip-audio {
+  0% {
+    mask-image: linear-gradient(to right, black 0%, transparent 0%);
+  }
+
+  5% {
+    mask-image: linear-gradient(to right, black 10%, transparent 10%);
+  }
+
+  10% {
+    mask-image: linear-gradient(to right, black 20%, transparent 10%);
+  }
+
+  20% {
+    mask-image: linear-gradient(to right, black 46%, transparent 10%);
+  }
+
+  30% {
+    mask-image: linear-gradient(to right, black 66%, transparent 10%);
+  }
+
+  40% {
+    mask-image: linear-gradient(to right, black 80%, transparent 10%);
+  }
+  50% {
+    mask-image: linear-gradient(to right, black 100%, transparent 100%);
+  }
+
+  60% {
+    mask-image: linear-gradient(to left, black 100%, transparent 10%);
+  }
+  70% {
+    mask-image: linear-gradient(to left, black 80%, transparent 10%);
+  }
+
+  80% {
+    mask-image: linear-gradient(to left, black 66%, transparent 10%);
+  }
+
+  90% {
+    mask-image: linear-gradient(to left, black 46%, transparent 10%);
+  }
+
+  100% {
+    mask-image: linear-gradient(to left, black 10%, transparent 10%);
+  }
+}

@@ -1,0 +1,21 @@
+.headerContainer {
+  padding: 24px 0 0 0;
+}
+
+.headerContainer::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 24px;
+}
+
+.logo {
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background: #f3f8fe;
+}
